@@ -5,8 +5,8 @@ if (!String.prototype.prepend) {
 }
 
 if (!String.prototype.append) {
-  String.prototype.prepend = function(prefix) {
-    return (prefix || '') + this;
+  String.prototype.append = function(suffix) {
+    return this + (suffix || '');
   };
 }
 
